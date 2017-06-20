@@ -1,0 +1,124 @@
+.article-page{
+    width: 100%;
+    display: inherit;
+    flex-direction: column;
+    padding: 0 4% 120px 4%;
+    color: #666;
+}
+.article-title{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.create-time {
+    margin-top: 15px;
+}
+.button-group {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+.button-config{
+    margin: 0 5px 0 5px;
+}
+.file-table-div {
+    margin-top: 30px;
+}
+.file-table{
+    margin-top: 20px;
+}
+.file-edit-table{
+    font-size: 18px;
+}
+.button-delete{
+    margin: 0 5px 0 5px;
+    background-color: #d9534f !important;
+    border-color: #d9534f !important;
+}
+.button-delete:hover,
+.button-delete:focus {
+    background-color: #d97c55 !important;
+    border-color: #d97c55 !important;
+}
+
+.editable-cell {
+    position: relative;
+    display: flex;
+}
+
+.editable-cell-input-wrapper,
+.editable-cell-text-wrapper {
+    line-height: 28px;
+    padding-right: 24px;
+    display: flex;
+}
+
+.editable-cell-text-wrapper {
+    padding: 5px 24px 5px 5px;
+    display: flex;
+}
+
+.editable-cell-icon,
+.editable-cell-icon-check {
+    position: absolute;
+    right: 0;
+    width: 20px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.editable-cell-icon {
+    line-height: 28px;
+    display: none;
+}
+
+.editable-cell-icon-check {
+    line-height: 28px;
+}
+
+.editable-cell:hover .editable-cell-icon {
+    display: inline-block;
+}
+
+.editable-cell-icon:hover,
+.editable-cell-icon-check:hover {
+    color:#2db7f5;
+}
+
+.editable-add-btn {
+    margin-bottom: 8px;
+}
+
+.table-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.button_save{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.select{
+    padding: 5px 24px 25px 5px;
+}
+
+.select-des{
+    padding: 0px 24px 15px 5px;
+}
+
+.select-field{
+    padding: 0px 24px 5px 5px;
+    font-size: 14px;
+    color: #d9534f;
+}
+
+.corr-result{
+    padding: 15px 24px 5px 5px;
+    font-size: 14px;
+    color: #d7823f;
+}

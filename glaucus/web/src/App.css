@@ -1,0 +1,8 @@
+.main-page {
+  display: flex;
+  margin: 2% auto 2% auto;
+  width: 92%;
+  background-color: white;
+  border-radius: 6px;
+  padding: 3% 0% 2% 0%;
+}

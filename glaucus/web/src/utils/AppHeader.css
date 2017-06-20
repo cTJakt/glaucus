@@ -1,0 +1,30 @@
+.app-header {
+    background-color: white;
+    height: 80px;
+    width: 100%;
+}
+.header-logo-div {
+    display: flex;
+    align-items: center;
+}
+.header-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 38px;
+}
+.app-name {
+    font-family: "Lucida Grande";
+    font-size: 18px;
+}
+@keyframes App-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+.menu {
+    display: flex;
+}
+.menu-item {
+    height: 80px;
+    line-height: 80px;
+    font-size: 16px;
+    min-width: 90px;
+}

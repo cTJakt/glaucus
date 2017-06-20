@@ -1,0 +1,45 @@
+.menu-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dl-file-title{
+    margin-left: 24px;
+}
+.add-model-btn{
+    margin-left: 24px;
+    margin-top: 10px;
+}
+.sub-menu {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #e9e9e9;
+}
+.file-menu {
+    margin-top: 10px;
+    width: 100%;
+    margin-left: -1px;
+    position: relative;
+    left: 1px;
+    border: none !important;
+}
+.model-menu{
+    font-size: 13px;
+}
+.pagination {
+    margin: 20px auto auto auto;
+}
+.model-trained{
+    color: black;
+}
+.model-not-trained{
+    color: lightgrey;
+}
+
+.file-menu-item{
+    font-size: 14px;
+    font-family: "sans-serif";
+}

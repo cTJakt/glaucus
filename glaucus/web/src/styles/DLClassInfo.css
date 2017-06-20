@@ -1,0 +1,17 @@
+.list-group-item{
+    font-size: 16px;
+    display:flex;
+}
+
+.folder-icon{
+    display: inline;
+}
+
+.item-text{
+    display: inline;
+    margin-left: 8px;
+}
+
+.backTo{
+    font-size: 14px;
+}

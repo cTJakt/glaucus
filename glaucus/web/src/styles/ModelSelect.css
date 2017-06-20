@@ -1,0 +1,47 @@
+.editable-cell {
+    position: relative;
+    display: flex;
+}
+
+.editable-cell-input-wrapper,
+.editable-cell-text-wrapper {
+    line-height: 28px;
+    padding-right: 24px;
+    display: flex;
+}
+
+.editable-cell-text-wrapper {
+    padding: 5px 24px 5px 5px;
+    display: flex;
+}
+
+.editable-cell-icon,
+.editable-cell-icon-check {
+    position: absolute;
+    right: 0;
+    width: 20px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.editable-cell-icon {
+    line-height: 28px;
+    display: none;
+}
+
+.editable-cell-icon-check {
+    line-height: 28px;
+}
+
+.editable-cell:hover .editable-cell-icon {
+    display: inline-block;
+}
+
+.editable-cell-icon:hover,
+.editable-cell-icon-check:hover {
+    color:#2db7f5;
+}
+
+.editable-add-btn {
+    margin-bottom: 8px;
+}
