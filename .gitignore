@@ -1,0 +1,12 @@
+*.pyc
+glaucus/java/spark-warehouse
+glaucus/java/target
+glaucus/java/project/project
+glaucus/java/project/target
+glaucus/python/venv
+glaucus/python/static
+glaucus/python/templates
+__pycache__/
+glaucus/python/src/spark-warehouse
+glaucus/web/node_modules
+
