@@ -157,7 +157,7 @@ Web端使用的是ES6标准的Javascript，运行环境为Chrome浏览器，其�
 </div>
 
 
-###第三步：运行项目  
+### 第三步：运行项目  
 - 运行项目：可以直接在Terminal输入npm run start运行；也可以配置一下：
 
 <div align=center>
@@ -170,7 +170,10 @@ Web端使用的是ES6标准的Javascript，运行环境为Chrome浏览器，其�
 <img src="./images/web/pic7.png" width=600>
 </div>
 
-- 这样我们就可以直接点击右上角的运行按钮进行运行，运行结果如下（访问localhost:3000/#/）：<div align=center>
+- 这样我们就可以直接点击右上角的运行按钮进行运行，运行结果如下（访问localhost:3000/#/）：
+
+<div align=center>
 <img src="./images/web/pic8.png" width=1000>
-</div>
+</div>
+
 
