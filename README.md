@@ -26,7 +26,7 @@
 </div>
   
 - 前端使用了**React+Redux**的框架，设计部分使用了Ant Design，图表部分使用了Ant Design。
-- 业务层主要使用了**Spring Boot(Java)和Flask(Python)**做为RESTful接口的提供。
+- 业务层主要使用了**Spring Boot(Java)**和**Flask(Python)**做为RESTful接口的提供。
 - 数据处理框架部分主要以分布式框架**Spark**为基础，向上扩展了以HDFS和MongoDB做为数据持久层的存储模式，向下扩展了以Docker和Linux虚拟机为基础的运行环境，并且进行了Shuffle算子等的优化，分布式服务器部分主要是展示了Spark，Hadoop和MongoDB的部署情况。
 - 数据引擎部分主要使用了分布式机器学习库**Spark ML和Tensorflow为基础的Keras框架**，自动化机器学习主要使用了基于SMAC**贝叶斯优化器管道调优**auto-sklearn以及基于Deap**遗传算法超参调优**TPOT。
 
