@@ -35,5 +35,64 @@ Pull我们的工程，进入`/glaucus`，分别有`/java`, `/python`, `/web`三�
 
 ## 使用Glaucus
 下面以两个例子演示手动模式和自动模式下，Glaucus平台的使用情况。
-> 待续...
+### 1. 手动模式
 
+- 首先找到`/data/test.csv`文件（为**真实用户数据**一部分），进入我们平台后，点击上传文件，数据会自动上传到云端服务器；
+
+<div align=center>
+<img src="./images/presents/pic1.png" width=1000/>
+</div>
+
+- 上传文件后，会看到系统自动分析出的字段，此时用户可以点击**开始分析**进行文件的简要分析，本例不做过多阐述，此时点击**增加配置**按钮；
+
+<div align=center>
+<img src="./images/presents/pic2.png" width=1000/>
+</div>
+
+- 进入配置界面后，第一步先填写和选择红框部分完成配置，包括*配置名称*，*模型的主要类别*以及*选择训练特征*（此时，用户可以**自动选取特征**，此处也不过多阐述）；
+
+<div align=center>
+<img src="./images/presents/pic3.png" width=1000/>
+</div>
+
+- 第二步，进行具体的模型和参数调整，如下图红框所示；
+
+<div align=center>
+<img src="./images/presents/pic8.png" width=1000/>
+</div>
+
+- 最后，确认所有信息后，开始训练
+
+<div align=center>
+<img src="./images/presents/pic4.png" width=1000/>
+</div>
+
+- 训练完成后，可以查看训练的模型结果，系统也会自动保存用户训练的结果，此时可以**使用模型**(此处不再赘述);
+
+<div align=center>
+<img src="./images/presents/pic5.png" width=1000/>
+</div>
+
+<div align=center>
+<img src="./images/presents/pic6.png" width=1000/>
+</div>
+
+### 2. 自动模式
+
+- 接*上例*中的文件`/data/test.csv`，再次点击**增加配置**按钮
+
+<div align=center>
+<img src="./images/presents/pic2.png" width=1000/>
+</div>
+
+- 进入配置界面后，在`选择模型类别`处选择**自动化分类器**，在完成红框处填写之后，可以完成自动化模型的添加；
+
+<div align=center>
+<img src="./images/presents/pic7.png" width=1000/>
+</div>
+
+- 经过训练后可以查看自动化训练模型的结果；
+
+<div align=center>
+<img src="./images/presents/pic9.png" width=1000/>
+</div>
