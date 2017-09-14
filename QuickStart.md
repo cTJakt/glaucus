@@ -1,5 +1,5 @@
 # 快速部署
-## Java&Scala部分
+## Java&Scala部分  
 Java部分使用了**JDK1.8**（唯一支持版本），以及**Scala 2.11.***，JDK的安装请参照[官方教程](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)进行，并且这个部分的安装还依赖[Spark，Hadoop集群搭建](http://nekomiao.me/2016/12/05/spark-install-distributed/)以及[MongoDB的安装](http://www.runoob.com/mongodb/mongodb-tutorial.html)。
 ### 第一步：配置相关环境（以IDEA为例）
 - 打开Idea Setting>Plugins，安装sbt,scala和lombok插件；
