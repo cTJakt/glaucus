@@ -101,6 +101,7 @@ Pull我们的工程，进入`/glaucus`，分别有`/java`, `/python`, `/web`三�
 下列成员对**Glaucus项目**作出贡献：
 
 - [尹建伟](http://mypage.zju.edu.cn/0001038)， 教授，浙江大学计算机科学与技术学院CCNT实验室
+- [罗智凌](http://www.bruceluo.net)，浙江大学计算机科学与技术学院CCNT实验室
 - 范子琨，浙江大学计算机科学与技术学院CCNT实验室
 - 廖翔勇，浙江大学计算机科学与技术学院CCNT实验室
 - 唐文博，浙江大学计算机科学与技术学院CCNT实验室
