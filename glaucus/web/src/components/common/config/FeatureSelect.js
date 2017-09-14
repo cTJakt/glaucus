@@ -161,8 +161,8 @@ class FeatureSelect extends React.Component {
 
         //form layout
         let formItemLayout = {
-            labelCol: { span: 3},
-            wrapperCol: { span: 6},
+            labelCol: { span: 4},
+            wrapperCol: { span: 8},
         };
         let formFeatureListLayout = {
             labelCol: { span: 3},

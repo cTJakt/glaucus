@@ -7,11 +7,13 @@ export default {
     userNameHint: '请输入用户名!',
     userNamePlaceHolder: '用户名',
     passwordHint: '请输入密码!',
+    passwordSureHint:'请确认密码',
     passwordPlaceHolder: "密码",
     userFormRemember: "记住我",
     userFormButton: "登录",
+    userRegister:"注册",
     /*Server Info*/
-    serverAddr: "http://localhost:8080",
+    serverAddr: "http://183.129.218.51:8077/cloudkits_2.11-1.0",
     // serverAddr: "http://172.18.7.103:8080",
     dlServerAddr: "http://localhost:8088",
     /*Home Page*/

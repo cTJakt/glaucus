@@ -53,9 +53,15 @@ function updateFile(res){
 
 
 function update(res) {
-    return dispatch=>{
-        Get("/api/file/get/detail?fileId=" + res[0].fileId)
-            .then(data=>dispatch(updateAll(res,data['data'])))
+    if(res.length===0){
+        return dispatch=>{
+            dispatch(updateAll([],[]));
+        }
+    }else{
+        return dispatch=>{
+            Get("/api/file/get/detail?fileId=" + res[0].fileId)
+                .then(data=>dispatch(updateAll(res,data['data'])))
+        }
     }
 }
 
@@ -65,7 +71,7 @@ export function updateAll(fileData,data) {
         type:UPDATE_ALL,
         fileData:fileData,
         fileInfoData:data,
-        fileId:fileData[0].fileId
+        fileId:fileData.length===0?"":fileData[0].fileId
     }
 }
 

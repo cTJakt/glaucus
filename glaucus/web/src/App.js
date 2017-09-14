@@ -6,13 +6,15 @@ import Model from './components/containers/Model'
 import DeepLearning from './components/containers/DLImage'
 // import Model from './model/Model'
 import './App.css'
+import { connect } from 'react-redux';
 /**
  * The Skeleton of the whole app
  * Created by lucas on 2016/11/23.
  */
-const userId = '582468b2f995e5ce9ed99007';
 class App extends React.Component {
     render() {
+        // let userId=this.props.loginManage.userId;
+        let userId=sessionStorage.userId;
         const tag = this.props.params.tag;
         const plus = this.props.params.plus;
         let content = [];
@@ -42,5 +44,11 @@ class App extends React.Component {
         );
     }
 }
+const mapStateToProps = state=>({
+    loginManage:state.loginManage,
+});
 
-export default App;
+const mapDispatchToProps = dispatch =>({
+});
+
+export default connect(mapStateToProps,mapDispatchToProps)(App)

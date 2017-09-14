@@ -42,6 +42,9 @@ class UploaderButtons extends React.Component {
     render() {
         const props = {
             name: 'file',
+            headers:{
+                "authorization":'Bearer '+sessionStorage.token,
+            },
             action: Strings.serverAddr + '/api/file/upload',
             data: {
                 'fileName': this.state.filename,

@@ -34,7 +34,7 @@ class FileManage extends React.Component{
 
     componentDidMount(){
         // this.props.init_file();
-        this.props.getFiles(this.props.fileManage.userId);
+        this.props.getFiles(this.props.userId);
         this.props.get_ana_functions();
         this.props.changePage("fileManage");
     }
@@ -48,7 +48,7 @@ class FileManage extends React.Component{
             if (res!==null) {
                 this.props.getFileInfo(this.props.fileManage.fileId);
                 MyNotification('success',this.props.fileManage.fileDetailData.fileName,"文件分析完成");
-                this.props.getFiles(this.props.fileManage.userId); //重新文件获取信息
+                this.props.getFiles(this.props.userId); //重新文件获取信息
                 callback(true);
             } else {
                 MyNotification('error',this.props.fileManage.fileDetailData.fileName,"文件分析失败");
@@ -68,7 +68,7 @@ class FileManage extends React.Component{
                     message: this.props.fileManage.fileDetailData.fileName,
                     description: "文件删除成功",
                 })
-                this.props.getFiles(this.props.fileManage.userId);
+                this.props.getFiles(this.props.userId);
             }else{
                 notification["error"]({
                     message: this.props.fileManage.fileDetailData.fileName,
@@ -132,14 +132,14 @@ class FileManage extends React.Component{
     }
 
     updateAfterUpload(){    //文件上传成功后刷新界面
-        this.props.getFiles(this.props.fileManage.userId);
+        this.props.getFiles(this.props.userId);
     }
 
     render(){
 
         let {fileManage,getFileInfo} = this.props;
         let {maxCell,currentPage,analysedTxt,analysed,headersNeedUpdate,modalData,selectFunction,anaFunctions,functionDescription,fileUploading,currentMenuPage,imageData} = fileManage;
-        let userId = fileManage.userId,fileId = fileManage.fileId;
+        let userId = this.props.userId,fileId = fileManage.fileId;
         let files = fileManage.filesData.files;
         let {fileName, fileDetail, createTime, fileInfo} = fileManage.fileDetailData;
         // fileActions.getFiles(userId);

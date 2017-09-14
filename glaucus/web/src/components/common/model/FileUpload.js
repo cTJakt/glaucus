@@ -42,6 +42,9 @@ class FileUpload extends React.Component {
     render() {
         const props = {
             name: 'file',
+            headers:{
+                "authorization":'Bearer '+sessionStorage.token,
+            },
             action: Strings.serverAddr + '/api/model/use/upload',
             data: {
                 'fileName': this.state.filename,

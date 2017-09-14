@@ -49,7 +49,7 @@ class DLModelInfo extends React.Component {
     }
 
     deleteModel(){  //删除model
-        this.props.deleteModel(this.props.modelId);
+        this.props.deleteModel(this.props.modelInfo);
     }
 
     useModel(){     //使用模型

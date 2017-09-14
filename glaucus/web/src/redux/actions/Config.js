@@ -33,16 +33,9 @@ export function init_config_page(userId) {  //配置界面初始化时获取所�
 }
 
 function init_config(configs) {        //将第一个配置作为默认显示的配置
-    if(configs.length===0){     //若没有配置信息返回就行
-        return dispatch=>{
-            init_config_info(configs,null);
-        }
-    }
-    else{
-        return dispatch=>{
-            Get("/api/config/get/one/config?configId=" + configs[0].configId)
-                .then(res=>dispatch(init_config_info(configs,res['data'])));
-        }
+    return dispatch=>{
+        Get("/api/config/get/one/config?configId=" + ((configs.length===0)?"0":configs[0].configId))
+            .then(res=>dispatch(init_config_info(configs,(configs.length===0)?null:res['data'])));
     }
 }
 

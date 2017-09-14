@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import {get_dl_all,get_the_model,change_visible,change_dl_model_page,change_select_file} from '../../redux/actions/DLModelAction'
 import {changePage} from '../../redux/actions/AppHeaderActions'
 import '../../styles/Model.css'
-import {Button,message,Row,Col} from 'antd'
+import {Button,message,Row,Col,notification} from 'antd'
 import Get from '../../utils/Get'
 import DLGet from '../../utils/DLGet'
 import MyNotification from '../../utils/MyNotification'
@@ -17,6 +17,7 @@ class DLModel extends React.Component{
     constructor(props){
        super(props);
        this.trainModel=this.trainModel.bind(this);
+        this.deleteModel = this.deleteModel.bind(this);
     }
     componentWillMount(){
     }
@@ -24,6 +25,29 @@ class DLModel extends React.Component{
     componentDidMount(){
         this.props.changePage("deepLearning");
         this.props.get_dl_all(this.props.userId);
+    }
+
+    deleteModel(modelInfo){
+        let modelId = modelInfo.modelId;
+        let modelName = modelInfo.modelName;
+        Get("/api/model/delete?modelId="+modelId).then(res => {
+            if(res!=null) {
+                if (res['data'] === true) { //若删除成功则重新加载界面
+                    notification["success"]({
+                        message: modelName,
+                        description: "模型删除成功",
+                    })
+                    this.props.get_model(this.props.userId);
+                } else {
+                    notification["error"]({
+                        message: modelName,
+                        description: "模型删除失败",
+                    })
+                }
+            }else {
+                message.error("服务器出错，请重试");
+            }
+        });
     }
 
     trainModel(modelId){       //训练模型
@@ -61,6 +85,7 @@ class DLModel extends React.Component{
                     <DLModelInfo modelInfo={modelInfo}
                                  modalVisible={modalVisible}
                                  trainModel={this.trainModel}
+                                 deleteModel={this.deleteModel}
                     />
                 </div>
             </div>

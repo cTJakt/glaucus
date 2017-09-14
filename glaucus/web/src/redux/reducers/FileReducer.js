@@ -139,13 +139,15 @@ export default (state = initialState, action) => {
                 modalData: Object.assign({}, state.modalData, {
                     visible:false,
                     targetKeys:[],
+                    anaResult:[],
+                    confirmLoading:false
                 }),
                 // selectFunction:"", //选择的字段函数
                 // functionDescription:"", //所选函数的描述
             });
         case 'UPDATE_ALL':
             const header1 = action.fileInfoData.headerInfos;
-            const newFileInfo1=Object.keys(header1).map(id => {
+            const newFileInfo1=action.fileInfoData.length===0?[]:Object.keys(header1).map(id => {
                 return {
                     "aliasName":header1[id].aliasName,
                     "fieldDes":header1[id].fieldDes,
@@ -172,10 +174,10 @@ export default (state = initialState, action) => {
                     files:action.fileData
                 },
                 fileDetailData: {
-                    fileName: action.fileInfoData.fileName,
+                    fileName: action.fileInfoData.length===0?"":action.fileInfoData.fileName,
                     fileDetail: newFileInfo1,
-                    createTime: action.fileInfoData.createTime,
-                    fileInfo: action.fileInfoData.fileStrucInfo,
+                    createTime: action.fileInfoData.length===0?"":action.fileInfoData.createTime,
+                    fileInfo: action.fileInfoData.length===0?"":action.fileInfoData.fileStrucInfo,
                     isFetching:true,
                     didInvalidate: true
                 },
