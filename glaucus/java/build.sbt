@@ -33,6 +33,8 @@ libraryDependencies ++= Seq(
   "org.springframework.boot" % "spring-boot-starter-data-mongodb" % "1.4.1.RELEASE",
   "org.springframework.boot" % "spring-boot-starter-thymeleaf" % "1.2.1.RELEASE",
   "org.springframework.boot" % "spring-boot-maven-plugin" % "1.4.1.RELEASE" % "provided",
+  /*jwt*/
+  "io.jsonwebtoken"%"jjwt"%"0.7.0",
   /* Parso and OpenCsv */
   "com.epam" % "parso" % "2.0",
   "com.opencsv" % "opencsv" % "3.7"

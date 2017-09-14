@@ -12,4 +12,5 @@ import lombok.Data;
 public class LoginPojo {
     private boolean loginStatus;
     private String userId;
+    private String jwtToken;
 }

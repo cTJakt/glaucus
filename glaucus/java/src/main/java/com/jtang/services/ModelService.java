@@ -148,7 +148,8 @@ public class ModelService {
         val result = picFiles.stream().map(picFile -> {
             List<DLModel> dlModels = dlModelDao.findByPicFileId(picFile.getId());
             return dlModels.stream()
-                    .map(dlModel -> new DLGeneralModelPojo(dlModel.getId(), dlModel.getModelName(), picFile.getId(), picFile.getFileName()))
+                    .map(dlModel -> new DLGeneralModelPojo(dlModel.getId(), dlModel.getModelName(), picFile.getId(), picFile.getFileName(),dlModel.isTrained()
+                            ,dlModel.getResOfModel()!=null))
                     .collect(Collectors.toList());
         }).reduce(new ArrayList<>(), (listA, listB) -> {
             listA.addAll(listB);

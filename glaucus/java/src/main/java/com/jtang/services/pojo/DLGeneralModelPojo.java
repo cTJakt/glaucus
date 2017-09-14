@@ -14,4 +14,6 @@ public class DLGeneralModelPojo {
     public String modelName;
     public String fileId;
     public String fileName;
+    public boolean isTrain;
+    public boolean hasResult;
 }
