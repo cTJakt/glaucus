@@ -34,7 +34,7 @@
 - 数据引擎部分主要使用了分布式机器学习库**Spark ML和Tensorflow为基础的Keras框架**，自动化机器学习主要使用了基于SMAC**贝叶斯优化器管道调优**auto-sklearn以及基于Deap**遗传算法超参调优**TPOT。
 
 ## 搭建Glaucus
-Pull我们的工程，进入`/glaucus`，分别有`/java`, `/python`, `/web`三个文件夹，依照[QuckStart.md](https://github.com/ccnt-glaucus/glaucus/blob/master/QuickStart_CN.md)的步骤进行部署，就可以成功运行我们的项目。
+Pull我们的工程，进入`/glaucus`，分别有`/java`, `/python`, `/web`三个文件夹，依照 [QuckStart.md](https://github.com/ccnt-glaucus/glaucus/blob/master/QuickStart_CN.md) 的步骤进行部署，就可以成功运行我们的项目。
 
 ## 使用Glaucus
 下面以两个例子演示手动模式和自动模式下，Glaucus平台的使用情况。
